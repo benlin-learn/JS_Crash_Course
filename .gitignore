@@ -1,0 +1,7 @@
+# 忽略所有附檔名是 .scss 的檔案
+*.scss
+# 忽略所有附檔名是 .map 的檔案
+*.map
+# 忽略資料夾 style 的檔案
+/style
+progress.md
