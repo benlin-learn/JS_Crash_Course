@@ -41,8 +41,6 @@
 // const hello = `My name is ${name} and I am ${age}`;
 // console.log(hello);
 
-
-
 // const s = 'Hello World';
 // const s2 = 'technology, computers, it, code';
 // console.log(s.length);
@@ -98,7 +96,6 @@
 
 // console.log(city);
 
-
 // person.email = 'john@gmail.com';
 // console.log(person);
 
@@ -151,7 +148,7 @@
 //     console.log(todo.text);
 // }
 
-/*forEach, map, filter*/ 
+/*forEach, map, filter*/
 
 // forEach
 
@@ -215,5 +212,41 @@
 
 // const addNums = (num1 = 1, num2 = 1) => num1 + num2;
 // console.log(addNums(5, 5));
+// --------------------------------------------------
+/*Constructor function */
+// function Person(firstName, lastName, dob) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.dob = new Date(dob);
+// }
+// Person.prototype.getBirthYear = function() {
+//   return this.dob.getFullYear();
+// };
+// Person.prototype.getFullName = function() {
+//   return `${this.firstName} ${this.lastName}`;
+// };
 
+// Class es6 
+// like syntax sugar just the same thing above
+// class Person {
+//   constructor(firstName, lastName, dob) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob);
+//   }
+//   getBirthYear() {
+//     return this.dob.getFullYear();
+//   };
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   };
+// }
+// -------------
+// Instantiate object 實例化物件
+// const person1 = new Person("John", "Doe", "4-3-1980");
+// const person2 = new Person("Mary", "Smith", "3-6-1986");
+// console.log(person1, person2);
+// console.log(person2.dob.getFullYear());
 
+// console.log(person1.getBirthYear());
+// console.log(person1.getFullName());
